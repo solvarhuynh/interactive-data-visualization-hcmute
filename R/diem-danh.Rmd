@@ -1,0 +1,26 @@
+---
+title: "Bai tap diem danh R"
+author: "Huynh Trung Nghia - 24133904"
+date: "22-08-2026"
+output:
+  html_document:
+    theme: flatly
+    toc: false
+---
+
+```{r}
+library(ggplot2)
+library(plotly)
+
+p <- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+  geom_point(size = 3) +
+  theme_minimal() +
+  labs(
+    title = "Trọng lượng vs Tiêu thụ nhiên liệu",
+    x = "Trọng lượng (1000 lbs)",
+    y = "Tiêu thụ nhiên liệu (mpg)",
+    color = "Số xy-lanh"
+  )
+
+ggplotly(p)
+```

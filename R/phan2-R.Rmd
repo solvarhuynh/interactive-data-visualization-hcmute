@@ -1,0 +1,18 @@
+---
+title: "Phần 2 - data iris"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+library(plotly)
+
+p <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width, color = Species)) +
+  geom_point(size = 2) +
+  theme_light() +
+  labs(title = "Chiều dài vs Chiều rộng cánh hoa",
+    x = "Chiều dài cánh hoa",
+    y = "Chiều rộng cánh hoa")
+
+ggplotly(p)
+```
