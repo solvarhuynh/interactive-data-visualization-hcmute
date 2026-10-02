@@ -1,0 +1,5 @@
+data storytelling - thầy soi biểu đồ - tránh gãy liên kết - mức chi tiết cố định
+# các chỉ số tổng hợp cơ bản:
+ - sum, mean, median, min/max
+
+# gom theo table, theo nhóm, theo đặc tính dữ liệu
